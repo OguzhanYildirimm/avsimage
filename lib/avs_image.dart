@@ -310,9 +310,7 @@ class AVSImage extends StatelessWidget {
   }
 
   Widget _buildProgressIndicator(context, a, b) => Center(
-        child: CircularProgressIndicator(
-          value: b.downloaded.toDouble(),
-        ),
+        child: CircularProgressIndicator.adaptive()
       );
 
   Widget _buildErrorWidget(context) {
